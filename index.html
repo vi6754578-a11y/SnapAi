@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SnapAI - AI Prompt Hub</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .box {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #38bdf8;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #facc15;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: #020617;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>🚀 SnapAI - AI Prompt Hub</header>
+
+<div class="container">
+
+  <p>Copy prompts & generate amazing AI images instantly</p>
+
+  <div class="box">
+    <h3>🚗 BMW Cinematic</h3>
+    <p id="p1">Ultra realistic BMW M4 in neon cyberpunk city, cinematic lighting, 8k, dramatic shadows</p>
+    <button onclick="copyText('p1')">Copy Prompt</button>
+  </div>
+
+  <div class="box">
+    <h3>🚘 Mercedes Luxury</h3>
+    <p id="p2">Luxury Mercedes Benz in sunset lighting, ultra realistic, golden hour, cinematic photography</p>
+    <button onclick="copyText('p2')">Copy Prompt</button>
+  </div>
+
+  <div class="box">
+    <h3>📸 Instagram Model</h3>
+    <p id="p3">Beautiful instagram model, soft lighting, realistic skin texture, DSLR, 85mm lens</p>
+    <button onclick="copyText('p3')">Copy Prompt</button>
+  </div>
+
+  <div class="box">
+    <h3>🌆 Cinematic City</h3>
+    <p id="p4">Dark cinematic city street, rain, neon lights, ultra realistic, film style, 4k</p>
+    <button onclick="copyText('p4')">Copy Prompt</button>
+  </div>
+
+  <a href="https://www.bing.com/images/create" target="_blank">
+    👉 Generate Image Here
+  </a>
+
+</div>
+
+<footer>
+  © 2026 SnapAI | Free AI Prompts for Everyone
+</footer>
+
+<script>
+function copyText(id) {
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Prompt Copied!");
+}
+</script>
+
+</body>
+</html>
