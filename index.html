@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnapAi | Trending AI Prompts</title>
+    <title>SnapAi | Best AI Prompts</title>
     <style>
-        :root { --primary: #00d2ff; --bg: #f4f7f6; --card-bg: #ffffff; }
-        body { margin: 0; font-family: 'Poppins', sans-serif; background: var(--bg); color: #333; }
-        header { background: #fff; padding: 20px; text-align: center; border-bottom: 3px solid var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { margin: 0; color: #222; font-size: 24px; }
-        .container { max-width: 800px; margin: 20px auto; padding: 10px; }
+        body { 
+            background-color: #000000; /* पूरा काला बैकग्राउंड */
+            color: #ffffff; 
+            font-family: 'Arial', sans-serif;
+            margin: 0; padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #000000);
+            padding: 50px 20px;
+            border-bottom: 3px solid #00d2ff;
+        }
+        h1 { font-size: 3.5rem; margin: 0; color: #00d2ff; text-shadow: 0 0 15px #00d2ff; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
         
-        /* Card Style like Anup Sagar */
-        .prompt-card { background: var(--card-bg); border-radius: 15px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #eee; }
-        .prompt-card img { width: 100%; height: auto; display: block; }
-        .content { padding: 20px; text-align: left; }
-        h2 { font-size: 18px; margin: 0 0 10px 0; color: #111; border-left: 4px solid var(--primary); padding-left: 10px; }
+        .prompt-card {
+            background: #111111;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 1px solid #333;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 210, 255, 0.1);
+        }
+        .prompt-title { color: #00d2ff; font-size: 1.5rem; margin-bottom: 10px; }
+        .prompt-text { color: #bbbbbb; line-height: 1.6; margin-bottom: 20px; }
         
-        .prompt-box { background: #f9f9f9; border: 1px dashed #ccc; padding: 15px; border-radius: 10px; font-size: 14px; line-height: 1.6; color: #555; position: relative; margin-top: 10px; }
-        .copy-btn { background: var(--primary); color: #fff; border: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 15px; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3); }
-        .copy-btn:hover { background: #0099cc; }
-        .copy-btn:active { transform: scale(0.98); }
+        .copy-btn {
+            background: #00d2ff;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .copy-btn:hover { background: #008fb3; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>SnapAi Photo Editor Prompts</h1>
+    <h1>SnapAi</h1>
+    <p>Ultimate Viral AI Prompts Library</p>
 </header>
 
 <div class="container">
-
     <div class="prompt-card">
-        <img src="https://img.freepik.com/premium-photo/cool-boy-standing-front-luxury-blue-car-with-name-vipin-neon-light-3d-rendering_1020697-456.jpg" alt="BMW AI Image">
-        <div class="content">
-            <h2>BMW Car Name AI Prompt</h2>
-            <p style="font-size: 13px; color: #888;">Neeche diye gaye prompt ko copy karein aur <b>"YOUR NAME"</b> ki jagah apna naam likhein.</p>
-            <div class="prompt-box" id="p1">
-                Create a realistic 3D illustration of a 18-year-old boy sitting on a luxury blue BMW M5 car. The boy is wearing a black hoodie and sneakers. The background features a neon sign "YOUR NAME" in bright blue light on a dark wall. 8k resolution, cinematic lighting.
-            </div>
-            <button class="copy-btn" onclick="copyText('p1')">Copy Prompt</button>
-        </div>
+        <div class="prompt-title">🔥 3D Social Media Avatar</div>
+        <p class="prompt-text" id="p1">3D illustration of a realistic 20-year-old boy sitting on a neon logo "VIPIN". He is wearing a stylish black hoodie and sneakers. The background is a dark gaming room with blue lighting, 8k resolution, ultra-detailed.</p>
+        <button class="copy-btn" onclick="copyPrompt('p1')">Copy Prompt</button>
     </div>
 
     <div class="prompt-card">
-        <img src="https://img.freepik.com/premium-photo/3d-illustration-18-year-old-boy-standing-with-black-mahindra-thar-white-hoodie_1020697-890.jpg" alt="Thar AI Image">
-        <div class="content">
-            <h2>Mahindra Thar Boys Prompt</h2>
-            <div class="prompt-box" id="p2">
-                A realistic 3D image of a young boy leaning against a modified black Mahindra Thar. The boy is wearing a stylish white jacket. Behind him, a neon glowing name "YOUR NAME" is visible on the garage wall. Ultra-realistic, 4k.
-            </div>
-            <button class="copy-btn" onclick="copyText('p2')">Copy Prompt</button>
-        </div>
+        <div class="prompt-title">🚗 Cinematic BMW M5</div>
+        <p class="prompt-text" id="p2">High-angle cinematic shot of a black BMW M5 CS parked on a neon-lit street in Tokyo at night, rain falling, reflections of neon signs on the car body, hyper-realistic, 8k, photorealistic.</p>
+        <button class="copy-btn" onclick="copyPrompt('p2')">Copy Prompt</button>
     </div>
-
 </div>
 
 <script>
-    function copyText(id) {
+    function copyPrompt(id) {
         var text = document.getElementById(id).innerText;
-        navigator.clipboard.writeText(text).then(function() {
-            alert("Prompt Copy Ho Gaya! Ab Bing Image Creator par jayein.");
-        }, function(err) {
-            console.error('Could not copy text: ', err);
-        });
+        navigator.clipboard.writeText(text);
+        alert("Success! Prompt copied.");
     }
 </script>
 
